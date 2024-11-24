@@ -1,0 +1,71 @@
+[gd_scene load_steps=13 format=3 uid="uid://bui1nnwh5kdif"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_hxq4w"]
+[ext_resource type="AudioStream" uid="uid://dnr8oytctn24b" path="res://meow-5.wav" id="2_vtnfb"]
+[ext_resource type="AudioStream" uid="uid://beutbnxci4kv1" path="res://meow-4.wav" id="3_fvema"]
+[ext_resource type="AudioStream" uid="uid://dcielsfuwfwtp" path="res://meow-3.wav" id="4_8ewr8"]
+[ext_resource type="AudioStream" uid="uid://byts322itb1hd" path="res://meow-2.wav" id="5_kvw0l"]
+[ext_resource type="AudioStream" uid="uid://b01xcglppf34q" path="res://meow-1.wav" id="6_op347"]
+[ext_resource type="AudioStream" uid="uid://cdkr73a5fnpxs" path="res://meow0.wav" id="7_8b7wp"]
+[ext_resource type="AudioStream" uid="uid://bq4ea31iwf6m5" path="res://meow1.wav" id="8_rav0d"]
+[ext_resource type="AudioStream" uid="uid://bo50uqlxvmcf2" path="res://meow2.wav" id="9_3rh57"]
+[ext_resource type="AudioStream" uid="uid://vdoheve0bvl7" path="res://meow3.wav" id="10_cw136"]
+[ext_resource type="AudioStream" uid="uid://cd6lhiyh3m5s5" path="res://meow4.wav" id="11_xvxbg"]
+[ext_resource type="AudioStream" uid="uid://n2iks6d2vbo5" path="res://meo5.wav" id="12_xcinh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hxq4w")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.202
+anchor_top = 0.333
+anchor_right = 0.202
+anchor_bottom = 0.333
+offset_left = -44.704
+offset_top = -35.784
+offset_right = 45.296
+offset_bottom = 36.216
+grow_horizontal = 2
+grow_vertical = 2
+text = "Button"
+
+[node name="meow-5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_vtnfb")
+
+[node name="meow-4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_fvema")
+
+[node name="meow-3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_8ewr8")
+
+[node name="meow-2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_kvw0l")
+
+[node name="meow-1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_op347")
+
+[node name="meow0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_8b7wp")
+
+[node name="meow1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_rav0d")
+
+[node name="meow2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_3rh57")
+
+[node name="meow3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_cw136")
+
+[node name="meow4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_xvxbg")
+
+[node name="meow5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_xcinh")
