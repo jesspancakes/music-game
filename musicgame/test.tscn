@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://18pvu1p4ekqs"]
+[gd_scene load_steps=36 format=3 uid="uid://18pvu1p4ekqs"]
 
 [ext_resource type="Script" path="res://control.gd" id="1_hxq4w"]
+[ext_resource type="Texture2D" uid="uid://50r2tysq8jcm" path="res://background.png" id="2_kv6er"]
 [ext_resource type="Texture2D" uid="uid://dntmexujpejaa" path="res://oranges.png" id="2_n4x28"]
 [ext_resource type="AudioStream" uid="uid://dnr8oytctn24b" path="res://meow-5.wav" id="2_vtnfb"]
 [ext_resource type="AudioStream" uid="uid://beutbnxci4kv1" path="res://meow-4.wav" id="3_fvema"]
@@ -13,6 +14,27 @@
 [ext_resource type="AudioStream" uid="uid://vdoheve0bvl7" path="res://meow3.wav" id="10_cw136"]
 [ext_resource type="AudioStream" uid="uid://cd6lhiyh3m5s5" path="res://meow4.wav" id="11_xvxbg"]
 [ext_resource type="AudioStream" uid="uid://n2iks6d2vbo5" path="res://meo5.wav" id="12_xcinh"]
+[ext_resource type="Texture2D" uid="uid://d4g7tnpef0rb1" path="res://tabby.png" id="14_kyse1"]
+[ext_resource type="Texture2D" uid="uid://c8vcjol1lisfd" path="res://tuxedo.png" id="15_8nme5"]
+[ext_resource type="Texture2D" uid="uid://qwwlyrfthytp" path="res://orangemeow.png" id="15_u4eea"]
+[ext_resource type="Texture2D" uid="uid://bhmwlio5achno" path="res://hellokitty.png" id="16_5krwe"]
+[ext_resource type="Texture2D" uid="uid://gq1dl02uql3w" path="res://tabbymeow.png" id="17_1vtbo"]
+[ext_resource type="Texture2D" uid="uid://beyen34rh2m4t" path="res://grey.png" id="17_5gxvh"]
+[ext_resource type="Texture2D" uid="uid://c0pyq65as6osg" path="res://cream.png" id="18_buf8x"]
+[ext_resource type="Texture2D" uid="uid://c0kd52p4w6pfl" path="res://tuxedomeow.png" id="19_jq05y"]
+[ext_resource type="Texture2D" uid="uid://bcclp4t73o2ut" path="res://calico.png" id="19_w5skm"]
+[ext_resource type="Texture2D" uid="uid://bywte6pgwyybj" path="res://brown.png" id="20_stobk"]
+[ext_resource type="Texture2D" uid="uid://dgh8kcrtjquui" path="res://blue.png" id="21_c8gcj"]
+[ext_resource type="Texture2D" uid="uid://bmddhesyjfcxh" path="res://hellokittymeow.png" id="21_xofqy"]
+[ext_resource type="Texture2D" uid="uid://dxdchgcuitovk" path="res://black.png" id="22_hy6sv"]
+[ext_resource type="Texture2D" uid="uid://2e2givgrunfx" path="res://aliencat.png" id="23_57kt0"]
+[ext_resource type="Texture2D" uid="uid://i32n3opidw7m" path="res://greymeow.png" id="23_qxsoh"]
+[ext_resource type="Texture2D" uid="uid://dk2b2u1mggucx" path="res://creammeow.png" id="25_qt251"]
+[ext_resource type="Texture2D" uid="uid://c0e2dy1igwtkr" path="res://calicomeow.png" id="27_1u0hp"]
+[ext_resource type="Texture2D" uid="uid://bw8xbopeyrufn" path="res://brownmeow.png" id="29_8yvqf"]
+[ext_resource type="Texture2D" uid="uid://qqyb32od1itv" path="res://bluemeow.png" id="31_sy044"]
+[ext_resource type="Texture2D" uid="uid://obhlsqanxkqe" path="res://blackmeow.png" id="33_ukrag"]
+[ext_resource type="Texture2D" uid="uid://bhquaov8xcclx" path="res://alienmeow.png" id="35_erhtv"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -23,21 +45,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hxq4w")
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.233
-anchor_top = 0.282
-anchor_right = 0.233
-anchor_bottom = 0.282
-offset_left = -67.416
-offset_top = -47.736
-offset_right = 67.584
-offset_bottom = 47.264
-grow_horizontal = 2
-grow_vertical = 2
-icon = ExtResource("2_n4x28")
-flat = true
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 1155.0
+offset_bottom = 648.0
+texture = ExtResource("2_kv6er")
 
 [node name="meow-5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_vtnfb")
@@ -72,4 +86,113 @@ stream = ExtResource("11_xvxbg")
 [node name="meow5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_xcinh")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 391.0
+offset_right = 140.0
+offset_bottom = 531.0
+texture_normal = ExtResource("2_n4x28")
+texture_pressed = ExtResource("15_u4eea")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 239.0
+offset_right = 249.0
+offset_bottom = 379.0
+texture_normal = ExtResource("14_kyse1")
+texture_pressed = ExtResource("17_1vtbo")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 388.0
+offset_right = 342.0
+offset_bottom = 528.0
+texture_normal = ExtResource("15_8nme5")
+texture_pressed = ExtResource("19_jq05y")
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 239.0
+offset_right = 451.0
+offset_bottom = 379.0
+texture_normal = ExtResource("16_5krwe")
+texture_pressed = ExtResource("21_xofqy")
+
+[node name="TextureButton5" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 411.0
+offset_top = 389.0
+offset_right = 539.0
+offset_bottom = 529.0
+texture_normal = ExtResource("17_5gxvh")
+texture_pressed = ExtResource("23_qxsoh")
+
+[node name="TextureButton6" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 236.0
+offset_right = 644.0
+offset_bottom = 376.0
+texture_normal = ExtResource("18_buf8x")
+texture_pressed = ExtResource("25_qt251")
+
+[node name="TextureButton7" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 621.0
+offset_top = 393.0
+offset_right = 749.0
+offset_bottom = 533.0
+texture_normal = ExtResource("19_w5skm")
+texture_pressed = ExtResource("27_1u0hp")
+
+[node name="TextureButton8" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 721.0
+offset_top = 237.0
+offset_right = 849.0
+offset_bottom = 377.0
+texture_normal = ExtResource("20_stobk")
+texture_pressed = ExtResource("29_8yvqf")
+
+[node name="TextureButton9" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 833.0
+offset_top = 390.0
+offset_right = 961.0
+offset_bottom = 530.0
+texture_normal = ExtResource("21_c8gcj")
+texture_pressed = ExtResource("31_sy044")
+
+[node name="TextureButton10" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 933.0
+offset_top = 226.0
+offset_right = 1061.0
+offset_bottom = 366.0
+texture_normal = ExtResource("22_hy6sv")
+texture_pressed = ExtResource("33_ukrag")
+
+[node name="TextureButton11" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 370.0
+offset_right = 1148.0
+offset_bottom = 525.0
+texture_normal = ExtResource("23_57kt0")
+texture_pressed = ExtResource("35_erhtv")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="TextureButton4" to="." method="_on_texture_button_4_pressed"]
+[connection signal="pressed" from="TextureButton5" to="." method="_on_texture_button_5_pressed"]
+[connection signal="pressed" from="TextureButton6" to="." method="_on_texture_button_6_pressed"]
+[connection signal="pressed" from="TextureButton7" to="." method="_on_texture_button_7_pressed"]
+[connection signal="pressed" from="TextureButton8" to="." method="_on_texture_button_8_pressed"]
+[connection signal="pressed" from="TextureButton9" to="." method="_on_texture_button_9_pressed"]
+[connection signal="pressed" from="TextureButton10" to="." method="_on_texture_button_10_pressed"]
+[connection signal="pressed" from="TextureButton11" to="." method="_on_texture_button_11_pressed"]
