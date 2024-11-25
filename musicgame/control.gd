@@ -8,5 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("meow1"):
+	if Input#
 		
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.
