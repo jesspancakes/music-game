@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1732544381
+icon.svg::CompressedTexture2D::2070112904984725480::1732538177::1732538201::1::::<><>::
+assignmentlearning.tscn::PackedScene::971570765667429719::1732543532::0::1::::<><>::res://audiodemo.gd<>uid://c4fr6gxj673q7::::res://meow0.wav
+meo5.wav::AudioStreamWAV::1775292573852267686::1732544381::1732544381::1::::<><>::
+meow0.wav::AudioStreamWAV::6819727621269760128::1732538945::1732538945::1::::<><>::
+audiodemo.gd::GDScript::-1::1732543885::0::1::::<>Node2D<>::
+default_bus_layout.tres::AudioBusLayout::3960375376106269365::1732544154::0::1::::<><>::
+meow1.wav::AudioStreamWAV::2360728444001352639::1732544369::1732544370::1::::<><>::
+meow2.wav::AudioStreamWAV::343459567673506472::1732544371::1732544372::1::::<><>::
+meow3.wav::AudioStreamWAV::3228634316540810307::1732544375::1732544375::1::::<><>::
+meow4.wav::AudioStreamWAV::7874921027476070372::1732544378::1732544378::1::::<><>::

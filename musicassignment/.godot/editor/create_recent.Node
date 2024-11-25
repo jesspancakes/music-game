@@ -1,0 +1,8 @@
+ColorRect
+CollisionShape2D
+Area2D
+Button
+Timer
+Node2D
+HSlider
+AudioStreamPlayer2D
