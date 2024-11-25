@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://n3vvmvantt0r"]
+[gd_scene load_steps=9 format=3 uid="uid://n3vvmvantt0r"]
 
 [ext_resource type="Script" path="res://audiodemo.gd" id="1_j4o0e"]
 [ext_resource type="AudioStream" uid="uid://c4fr6gxj673q7" path="res://meow0.wav" id="2_kbh0b"]
+[ext_resource type="Script" path="res://looper.gd" id="3_ypalp"]
+[ext_resource type="AudioStream" uid="uid://8vs38tit5dgh" path="res://meow1.wav" id="4_pwbhg"]
+[ext_resource type="AudioStream" uid="uid://e5my1uwwmwvg" path="res://meow2.wav" id="5_l083v"]
+[ext_resource type="AudioStream" uid="uid://bl88euvchi26j" path="res://meow3.wav" id="6_6weo2"]
+[ext_resource type="AudioStream" uid="uid://dkgw2fnlmtins" path="res://meow4.wav" id="7_7xl06"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yycg"]
+size = Vector2(40, 40)
 
 [node name="audiodemo" type="Node2D"]
 script = ExtResource("1_j4o0e")
@@ -22,5 +30,62 @@ offset_top = 319.0
 offset_right = 598.0
 offset_bottom = 335.0
 
+[node name="HSlider2" type="HSlider" parent="."]
+offset_left = 462.0
+offset_top = 395.0
+offset_right = 919.0
+offset_bottom = 411.0
+
+[node name="looper" type="Node2D" parent="."]
+script = ExtResource("3_ypalp")
+
+[node name="Meow0" type="AudioStreamPlayer" parent="looper"]
+stream = ExtResource("2_kbh0b")
+
+[node name="Meow1" type="AudioStreamPlayer" parent="looper"]
+stream = ExtResource("4_pwbhg")
+
+[node name="Meow2" type="AudioStreamPlayer" parent="looper"]
+stream = ExtResource("5_l083v")
+
+[node name="Meow3" type="AudioStreamPlayer" parent="looper"]
+stream = ExtResource("6_6weo2")
+
+[node name="Meow4" type="AudioStreamPlayer" parent="looper"]
+stream = ExtResource("7_7xl06")
+
+[node name="Timer" type="Timer" parent="looper"]
+wait_time = 0.5
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 351.0
+offset_top = 211.0
+offset_right = 434.0
+offset_bottom = 242.0
+text = "next note"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(120, 57)
+shape = SubResource("RectangleShape2D_5yycg")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 100.0
+offset_top = 37.0
+offset_right = 140.0
+offset_bottom = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="timeout" from="looper/Timer" to="looper" method="_on_timer_timeout"]
+[connection signal="button_down" from="Button2" to="looper" method="_on_button_2_button_down"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
