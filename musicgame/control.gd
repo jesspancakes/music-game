@@ -8,9 +8,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input#
-		
+	pass
+
+	
 
 
 func _on_button_pressed() -> void:
+	
+	
 	pass # Replace with function body.

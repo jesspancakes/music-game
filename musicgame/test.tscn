@@ -71,3 +71,5 @@ stream = ExtResource("11_xvxbg")
 
 [node name="meow5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_xcinh")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
