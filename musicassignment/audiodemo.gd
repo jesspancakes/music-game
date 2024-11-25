@@ -28,4 +28,10 @@ func _on_h_slider_value_changed(value: float) -> void:
 
 
 func _on_h_slider_2_value_changed(value: float) -> void:
+	var f:AudioEffectLowPassFilter = AudioServer.get_bus_effect(0,0)
+	f.rate_hz = value 
+	pass # Replace with function body.
+
+
+func _on_area_2d_mouse_entered() -> void:
 	pass # Replace with function body.
