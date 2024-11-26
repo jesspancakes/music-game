@@ -170,9 +170,9 @@ texture_pressed = ExtResource("31_sy044")
 [node name="TextureButton10" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 933.0
-offset_top = 226.0
+offset_top = 241.0
 offset_right = 1061.0
-offset_bottom = 366.0
+offset_bottom = 381.0
 texture_normal = ExtResource("22_hy6sv")
 texture_pressed = ExtResource("33_ukrag")
 
