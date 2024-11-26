@@ -35,8 +35,7 @@ func _on_texture_button_4_pressed() -> void:
 
 
 func _on_texture_button_5_pressed() -> void:
-	$"meow-1".play
-	
+	$"meow-1".play()
 	pass # Replace with function body.
 
 
