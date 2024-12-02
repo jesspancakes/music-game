@@ -1,9 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://b30x6t5s8ecjs"]
+[gd_scene load_steps=25 format=3 uid="uid://b30x6t5s8ecjs"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_asdye"]
 [ext_resource type="Texture2D" uid="uid://50r2tysq8jcm" path="res://background.png" id="2_epeba"]
 [ext_resource type="Texture2D" uid="uid://dntmexujpejaa" path="res://oranges.png" id="3_v4ccp"]
 [ext_resource type="AudioStream" uid="uid://dnr8oytctn24b" path="res://meow-5.wav" id="4_4iqpq"]
+[ext_resource type="Texture2D" uid="uid://d4g7tnpef0rb1" path="res://tabby.png" id="5_iur0o"]
+[ext_resource type="AudioStream" uid="uid://beutbnxci4kv1" path="res://meow-4.wav" id="6_og0g8"]
+[ext_resource type="Texture2D" uid="uid://c8vcjol1lisfd" path="res://tuxedo.png" id="7_tmu1n"]
+[ext_resource type="AudioStream" uid="uid://dcielsfuwfwtp" path="res://meow-3.wav" id="8_5covy"]
+[ext_resource type="Texture2D" uid="uid://bhmwlio5achno" path="res://hellokitty.png" id="9_a3l41"]
+[ext_resource type="AudioStream" uid="uid://byts322itb1hd" path="res://meow-2.wav" id="10_f0wq5"]
+[ext_resource type="Texture2D" uid="uid://beyen34rh2m4t" path="res://grey.png" id="11_gpg4q"]
+[ext_resource type="AudioStream" uid="uid://b01xcglppf34q" path="res://meow-1.wav" id="12_8rkbh"]
+[ext_resource type="Texture2D" uid="uid://c0pyq65as6osg" path="res://cream.png" id="13_33xso"]
+[ext_resource type="AudioStream" uid="uid://cdkr73a5fnpxs" path="res://meow0.wav" id="14_hjm7v"]
+[ext_resource type="Texture2D" uid="uid://bcclp4t73o2ut" path="res://calico.png" id="15_3kw6d"]
+[ext_resource type="AudioStream" uid="uid://bq4ea31iwf6m5" path="res://meow1.wav" id="16_5a110"]
+[ext_resource type="Texture2D" uid="uid://bywte6pgwyybj" path="res://brown.png" id="17_okj50"]
+[ext_resource type="AudioStream" uid="uid://bo50uqlxvmcf2" path="res://meow2.wav" id="18_15h4u"]
+[ext_resource type="Texture2D" uid="uid://dgh8kcrtjquui" path="res://blue.png" id="19_vtrvi"]
+[ext_resource type="AudioStream" uid="uid://vdoheve0bvl7" path="res://meow3.wav" id="20_w7br8"]
+[ext_resource type="Texture2D" uid="uid://dxdchgcuitovk" path="res://black.png" id="21_evrp4"]
+[ext_resource type="AudioStream" uid="uid://cd6lhiyh3m5s5" path="res://meow4.wav" id="22_7y560"]
+[ext_resource type="Texture2D" uid="uid://2e2givgrunfx" path="res://aliencat.png" id="23_k8pny"]
+[ext_resource type="AudioStream" uid="uid://n2iks6d2vbo5" path="res://meo5.wav" id="24_6j6sd"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_asdye")
@@ -14,21 +34,167 @@ offset_bottom = 645.0
 texture = ExtResource("2_epeba")
 
 [node name="cat1" type="Button" parent="."]
-offset_left = 60.0
-offset_top = 282.0
-offset_right = 186.0
-offset_bottom = 414.0
+offset_left = 38.0
+offset_top = 417.0
+offset_right = 164.0
+offset_bottom = 549.0
 flat = true
 
 [node name="orangecat" type="Sprite2D" parent="."]
-position = Vector2(123, 346)
+position = Vector2(101, 482)
 texture = ExtResource("3_v4ccp")
 
 [node name="meow-5" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_4iqpq")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="cat2" type="Button" parent="."]
+offset_left = 123.0
+offset_top = 277.0
+offset_right = 252.0
+offset_bottom = 412.0
+flat = true
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="tabbycat" type="Sprite2D" parent="."]
+position = Vector2(186, 342)
+texture = ExtResource("5_iur0o")
+
+[node name="meow-4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_og0g8")
+
+[node name="cat3" type="Button" parent="."]
+offset_left = 226.0
+offset_top = 420.0
+offset_right = 353.0
+offset_bottom = 554.0
+flat = true
+
+[node name="tuxedocat" type="Sprite2D" parent="."]
+position = Vector2(289, 484)
+texture = ExtResource("7_tmu1n")
+
+[node name="meow-3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_5covy")
+
+[node name="cat4" type="Button" parent="."]
+offset_left = 328.0
+offset_top = 262.0
+offset_right = 454.0
+offset_bottom = 401.0
+flat = true
+
+[node name="hellokitty" type="Sprite2D" parent="."]
+position = Vector2(390, 331)
+texture = ExtResource("9_a3l41")
+
+[node name="meow-2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_f0wq5")
+
+[node name="cat5" type="Button" parent="."]
+offset_left = 412.0
+offset_top = 415.0
+offset_right = 539.0
+offset_bottom = 547.0
+flat = true
+
+[node name="greycat" type="Sprite2D" parent="."]
+position = Vector2(477, 479)
+texture = ExtResource("11_gpg4q")
+
+[node name="meow-1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_8rkbh")
+
+[node name="cat6" type="Button" parent="."]
+offset_left = 511.0
+offset_top = 267.0
+offset_right = 638.0
+offset_bottom = 404.0
+flat = true
+
+[node name="creamcat" type="Sprite2D" parent="."]
+position = Vector2(573, 334)
+texture = ExtResource("13_33xso")
+
+[node name="meow0" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_hjm7v")
+
+[node name="cat7" type="Button" parent="."]
+offset_left = 602.0
+offset_top = 420.0
+offset_right = 734.0
+offset_bottom = 555.0
+flat = true
+
+[node name="calicocat" type="Sprite2D" parent="."]
+position = Vector2(668, 486)
+texture = ExtResource("15_3kw6d")
+
+[node name="meow1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_5a110")
+
+[node name="cat8" type="Button" parent="."]
+offset_left = 703.0
+offset_top = 270.0
+offset_right = 832.0
+offset_bottom = 406.0
+flat = true
+
+[node name="browncat" type="Sprite2D" parent="."]
+position = Vector2(766, 336)
+texture = ExtResource("17_okj50")
+
+[node name="meow2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_15h4u")
+
+[node name="cat9" type="Button" parent="."]
+offset_left = 806.0
+offset_top = 408.0
+offset_right = 938.0
+offset_bottom = 546.0
+flat = true
+
+[node name="bluecat" type="Sprite2D" parent="."]
+position = Vector2(871, 476)
+texture = ExtResource("19_vtrvi")
+
+[node name="meow3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_w7br8")
+
+[node name="cat10" type="Button" parent="."]
+offset_left = 906.0
+offset_top = 262.0
+offset_right = 1036.0
+offset_bottom = 397.0
+flat = true
+
+[node name="blackcat" type="Sprite2D" parent="."]
+position = Vector2(972, 329)
+texture = ExtResource("21_evrp4")
+
+[node name="meow4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("22_7y560")
+
+[node name="cat11" type="Button" parent="."]
+offset_left = 1004.0
+offset_top = 398.0
+offset_right = 1131.0
+offset_bottom = 545.0
+flat = true
+
+[node name="aliencat" type="Sprite2D" parent="."]
+position = Vector2(1068, 467)
+texture = ExtResource("23_k8pny")
+
+[node name="meow5" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("24_6j6sd")
 
 [connection signal="pressed" from="cat1" to="." method="_on_cat_1_pressed"]
+[connection signal="pressed" from="cat2" to="." method="_on_cat_2_pressed"]
+[connection signal="pressed" from="cat3" to="." method="_on_cat_3_pressed"]
+[connection signal="pressed" from="cat4" to="." method="_on_cat_4_pressed"]
+[connection signal="pressed" from="cat5" to="." method="_on_cat_5_pressed"]
+[connection signal="pressed" from="cat6" to="." method="_on_cat_6_pressed"]
+[connection signal="pressed" from="cat7" to="." method="_on_cat_7_pressed"]
+[connection signal="pressed" from="cat8" to="." method="_on_cat_8_pressed"]
+[connection signal="pressed" from="cat9" to="." method="_on_cat_9_pressed"]
+[connection signal="pressed" from="cat10" to="." method="_on_cat_10_pressed"]
+[connection signal="pressed" from="cat11" to="." method="_on_cat_11_pressed"]
