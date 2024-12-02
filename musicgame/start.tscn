@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo00anpls3v6m"]
+
+[ext_resource type="Script" path="res://new_script.gd" id="1_kvtj8"]
+[ext_resource type="Texture2D" uid="uid://50r2tysq8jcm" path="res://background.png" id="2_t3d83"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kvtj8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1153.0
+offset_bottom = 649.0
+texture = ExtResource("2_t3d83")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 481.0
+offset_top = 336.0
+offset_right = 643.0
+offset_bottom = 375.0
+text = "START"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 382.0
+offset_top = 151.0
+offset_right = 747.0
+offset_bottom = 222.0
+text = "CAT CHOIR	"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
