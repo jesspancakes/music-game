@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b30x6t5s8ecjs"]
+[gd_scene load_steps=27 format=3 uid="uid://b30x6t5s8ecjs"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_asdye"]
 [ext_resource type="Texture2D" uid="uid://50r2tysq8jcm" path="res://background.png" id="2_epeba"]
@@ -24,6 +24,8 @@
 [ext_resource type="AudioStream" uid="uid://cd6lhiyh3m5s5" path="res://meow4.wav" id="22_7y560"]
 [ext_resource type="Texture2D" uid="uid://2e2givgrunfx" path="res://aliencat.png" id="23_k8pny"]
 [ext_resource type="AudioStream" uid="uid://n2iks6d2vbo5" path="res://meo5.wav" id="24_6j6sd"]
+[ext_resource type="AudioStream" uid="uid://d067l6anh1jtp" path="res://music-assignment_samples_clap-tape.wav" id="25_aalym"]
+[ext_resource type="Script" path="res://pitchslider.gd" id="25_anrij"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_asdye")
@@ -187,6 +189,21 @@ texture = ExtResource("23_k8pny")
 [node name="meow5" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("24_6j6sd")
 
+[node name="drum" type="Button" parent="."]
+offset_left = 950.0
+offset_top = 55.0
+offset_right = 1097.0
+offset_bottom = 126.0
+text = "drum"
+
+[node name="drumnoise" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("25_aalym")
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_right = 8.0
+offset_bottom = 16.0
+script = ExtResource("25_anrij")
+
 [connection signal="pressed" from="cat1" to="." method="_on_cat_1_pressed"]
 [connection signal="pressed" from="cat2" to="." method="_on_cat_2_pressed"]
 [connection signal="pressed" from="cat3" to="." method="_on_cat_3_pressed"]
@@ -198,3 +215,4 @@ stream = ExtResource("24_6j6sd")
 [connection signal="pressed" from="cat9" to="." method="_on_cat_9_pressed"]
 [connection signal="pressed" from="cat10" to="." method="_on_cat_10_pressed"]
 [connection signal="pressed" from="cat11" to="." method="_on_cat_11_pressed"]
+[connection signal="pressed" from="drum" to="." method="_on_drum_pressed"]
