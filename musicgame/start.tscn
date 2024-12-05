@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bo00anpls3v6m"]
+[gd_scene load_steps=6 format=3 uid="uid://bo00anpls3v6m"]
 
 [ext_resource type="Script" path="res://new_script.gd" id="1_kvtj8"]
 [ext_resource type="Texture2D" uid="uid://50r2tysq8jcm" path="res://background.png" id="2_t3d83"]
+[ext_resource type="Texture2D" uid="uid://c4pdn2tpfauvo" path="res://startbutton.png" id="3_exdc6"]
+[ext_resource type="Texture2D" uid="uid://cu52sl7h72lwy" path="res://quitbutton.png" id="4_nhhts"]
+[ext_resource type="Texture2D" uid="uid://40v6xojmmvy5" path="res://kittychoir.png" id="5_f4x0s"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_kvtj8")
@@ -11,18 +14,24 @@ offset_right = 1153.0
 offset_bottom = 649.0
 texture = ExtResource("2_t3d83")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 481.0
-offset_top = 336.0
-offset_right = 643.0
-offset_bottom = 375.0
-text = "START"
+[node name="start" type="Button" parent="."]
+offset_left = 420.0
+offset_top = 319.0
+offset_right = 519.0
+offset_bottom = 423.0
+icon = ExtResource("3_exdc6")
+flat = true
 
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 382.0
-offset_top = 151.0
-offset_right = 747.0
-offset_bottom = 222.0
-text = "CAT CHOIR	"
+[node name="quit" type="Button" parent="."]
+offset_left = 590.0
+offset_top = 321.0
+offset_right = 689.0
+offset_bottom = 425.0
+icon = ExtResource("4_nhhts")
+flat = true
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(565, 174)
+texture = ExtResource("5_f4x0s")
+
+[connection signal="pressed" from="start" to="." method="_on_button_pressed"]
