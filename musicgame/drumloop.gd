@@ -25,7 +25,8 @@ var num_samples:int
 
 var dir = 1
 
-func _on_timer_timeout1() -> void:
+
+func _on_timer_timeout() -> void:
 	var sn = pattern[current]
 	if sn != -1:		
 		var s = get_child(sn)
@@ -41,7 +42,7 @@ func _on_timer_timeout1() -> void:
 	pass # Replace with function body.
 
 
-func _on_drum_pressed() -> void:
+func _on_button_2_pressed() -> void:
 	var s = get_child(current)
 	s.play()
 	print(current)

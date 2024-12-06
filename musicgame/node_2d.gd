@@ -101,5 +101,6 @@ func _on_cat_11_pressed() -> void:
 
 
 
-func _on_button_pressed() -> void:
+func _on_drum_pressed() -> void:
+	$drumloop.play()
 	pass # Replace with function body.
