@@ -98,3 +98,8 @@ func _on_cat_11_pressed() -> void:
 	await get_tree().create_timer(0.5).timeout
 	$aliencat.texture = load("res://aliencat.png")
 	pass # Replace with function body.
+
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.
