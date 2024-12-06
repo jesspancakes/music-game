@@ -100,7 +100,11 @@ func _on_cat_11_pressed() -> void:
 	pass # Replace with function body.
 
 
-
 func _on_drum_pressed() -> void:
 	$drumloop.play()
+	pass # Replace with function body.
+
+
+func _on_stop_pressed() -> void:
+	$drumloop.stop()
 	pass # Replace with function body.
