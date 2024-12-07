@@ -1,5 +1,6 @@
 extends Node2D
 
+var is_playing : bool = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -97,4 +98,17 @@ func _on_cat_11_pressed() -> void:
 	$aliencat.texture = load("res://alienmeow.png")
 	await get_tree().create_timer(0.5).timeout
 	$aliencat.texture = load("res://aliencat.png")
+	pass # Replace with function body.
+
+
+
+func _on_drum_pressed() -> void:
+	$drumloop.play()
+	
+	if is_playing:
+		$drumloop.stop()
+	else:
+		$drumloop.play()
+		
+	is_playing = !is_playing
 	pass # Replace with function body.

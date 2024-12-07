@@ -205,7 +205,7 @@ script = ExtResource("27_gih6d")
 [node name="kevin" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("28_511fi")
 
-[node name="Button" type="Button" parent="."]
+[node name="drum" type="Button" parent="."]
 offset_left = 1018.0
 offset_top = 22.0
 offset_right = 1139.0
@@ -226,4 +226,4 @@ script = ExtResource("30_0laar")
 [connection signal="pressed" from="cat10" to="." method="_on_cat_10_pressed"]
 [connection signal="pressed" from="cat11" to="." method="_on_cat_11_pressed"]
 [connection signal="changed" from="pitch_slider" to="." method="_on_pitch_slider_changed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="drum" to="." method="_on_drum_pressed"]
