@@ -98,13 +98,3 @@ func _on_cat_11_pressed() -> void:
 	await get_tree().create_timer(0.5).timeout
 	$aliencat.texture = load("res://aliencat.png")
 	pass # Replace with function body.
-
-
-func _on_drum_pressed() -> void:
-	$drumloop.play()
-	pass # Replace with function body.
-
-
-func _on_stop_pressed() -> void:
-	$drumloop.stop()
-	pass # Replace with function body.
