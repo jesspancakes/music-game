@@ -25,9 +25,9 @@
 [ext_resource type="Texture2D" uid="uid://2e2givgrunfx" path="res://aliencat.png" id="23_k8pny"]
 [ext_resource type="AudioStream" uid="uid://n2iks6d2vbo5" path="res://meo5.wav" id="24_6j6sd"]
 [ext_resource type="AudioStream" uid="uid://d4ngew3nwkhci" path="res://music-assignment_samples_clap-tape.ogg" id="26_pb1ww"]
-[ext_resource type="Script" path="res://h_slider.gd" id="27_gih6d"]
 [ext_resource type="AudioStream" uid="uid://8nt27topldn8" path="res://kevin-macleod-carefree.mp3" id="28_511fi"]
 [ext_resource type="Texture2D" uid="uid://cdl87nf74ftrr" path="res://moon.png" id="28_hfg55"]
+[ext_resource type="Script" path="res://h_slider2.gd" id="29_wyjq5"]
 [ext_resource type="Script" path="res://drumbutton.gd" id="30_0laar"]
 
 [node name="Node2D" type="Node2D"]
@@ -195,13 +195,6 @@ stream = ExtResource("24_6j6sd")
 [node name="drumloop" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("26_pb1ww")
 
-[node name="pitch_slider" type="HSlider" parent="."]
-offset_left = 38.0
-offset_top = 238.0
-offset_right = 293.0
-offset_bottom = 254.0
-script = ExtResource("27_gih6d")
-
 [node name="kevin" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("28_511fi")
 
@@ -214,6 +207,13 @@ icon = ExtResource("28_hfg55")
 flat = true
 script = ExtResource("30_0laar")
 
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = 157.0
+offset_top = 78.0
+offset_right = 507.0
+offset_bottom = 140.0
+script = ExtResource("29_wyjq5")
+
 [connection signal="pressed" from="cat1" to="." method="_on_cat_1_pressed"]
 [connection signal="pressed" from="cat2" to="." method="_on_cat_2_pressed"]
 [connection signal="pressed" from="cat3" to="." method="_on_cat_3_pressed"]
@@ -225,5 +225,4 @@ script = ExtResource("30_0laar")
 [connection signal="pressed" from="cat9" to="." method="_on_cat_9_pressed"]
 [connection signal="pressed" from="cat10" to="." method="_on_cat_10_pressed"]
 [connection signal="pressed" from="cat11" to="." method="_on_cat_11_pressed"]
-[connection signal="changed" from="pitch_slider" to="." method="_on_pitch_slider_changed"]
 [connection signal="pressed" from="drum" to="." method="_on_drum_pressed"]
