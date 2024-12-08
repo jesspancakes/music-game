@@ -6,3 +6,9 @@ To play, click on the cats. Use the slider to adjust the volume. Clicking on the
 
 Features: Buttons that change when clicked, volume sliders, drum loop
 
+<img width="550" alt="kittystart" src="https://github.com/user-attachments/assets/5cfd0b0a-8dad-4143-8eb2-57afa18ce0fe">
+<img width="570" alt="kitty" src="https://github.com/user-attachments/assets/998abbac-567c-4f90-8068-e8e0408c4a81">
+
+
+https://github.com/user-attachments/assets/58d2a58e-9c57-44bc-93b4-65896af6779f
+
