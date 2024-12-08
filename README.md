@@ -10,5 +10,5 @@ Features: Buttons that change when clicked, volume sliders, drum loop
 <img width="570" alt="kitty" src="https://github.com/user-attachments/assets/998abbac-567c-4f90-8068-e8e0408c4a81">
 
 
-https://github.com/user-attachments/assets/58d2a58e-9c57-44bc-93b4-65896af6779f
+https://github.com/user-attachments/assets/b594995e-a378-433c-aff7-9aa3cbe0ea2c
 
